@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Login.css">
+    <title>Login Page</title>
+    <script>
+        function validateLogin() {
+            // Predefined credentials
+            const validCredentials = [
+                { username: "2200039037", password: "123" },
+                { username: "sai", password: "235" }
+            ];
+    
+            // Fetch input values
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+    
+            // Check if credentials match any valid pair
+            const isValid = validCredentials.some(
+                (credential) => credential.username === username && credential.password === password
+            );
+    
+            if (isValid) {
+                // Redirect to home page
+                window.location.href = "Home.html";
+            } else {
+                // Show error message
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <h1 class="Title">Student Wellness Center</h1>
+    <div class="Login_container">
+        <img src="../../Desktop/Student_health/Doctor_cartoon.jpg" alt="image">
+
+        <div class="Login_page">
+            <label for="username">Username</label>
+            <input class="input" type="text" id="username" placeholder="Username">
+
+            <label for="password">Password</label>
+            <input class="input" type="password" id="password" placeholder="Password">
+
+            <!-- Removed the <a> tag -->
+            <button class="Login_button" onclick="validateLogin()">Login</button>
+
+            <a class="Anchor" href="Signup.html"><p>If not registered / Signup</p></a>
+
+            <a style="text-decoration: none;" href="Admin_login.html">
+                <p style="border: 0; color: #24b58c; border-radius: 3px; padding: 10px;">Admin Login</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

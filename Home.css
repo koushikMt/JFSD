@@ -1,0 +1,312 @@
+
+
+/* ---------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Navbar {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 10vh;
+    align-items: center;  
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.Nav_image {
+    height: 10vh;
+    width: 10vw;
+}
+
+
+
+.Nav_contetn {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.Nav_list {
+    position: relative;
+}
+
+.Nav_list a {
+    color: #404241;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.Nav_list a:hover {
+    color: #24b58c;
+    font-weight: 500;
+}
+
+
+
+.dropdown li , .dropdown2 li {
+    padding: 10px;
+}
+
+.dropdown li a  , .dropdown2 li a {
+    color: #404241; 
+}
+
+.dropdown li a:hover , .dropdown2 li a:hover {
+    color: #24b58c;
+}
+
+
+.Nav_list:hover .dropdown , .Nav_list:hover .dropdown2 {
+    display: block; 
+    height: 20vh; 
+    width: 20vw;  
+}
+
+.Home_section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+
+}
+.Home_section , img{
+    height: 90vh;
+    width: 60vw;
+    max-width: 100%;
+}
+.Text_content{
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+}
+.Text_content, h1{
+    color: #404241;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    white-space: nowrap;
+    max-width: 100%;
+    margin: 10px 0;
+    
+    
+}
+.Text_content{
+    color: #404241;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Health-resources{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+.H_img{
+    height: 30vh;
+    width: 20vw;
+}
+.Health-resources,H1{
+    text-align: center;
+    color: #404241;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+   
+}
+/* .image-container:hover{
+    
+} */
+
+.Mental , .Fitness , .Nutrition{
+    border: 3px solid #24b58c;
+    box-shadow: 0px 3px 10px  #313332; 
+}
+.H_button{
+    /* background-color: #24b58c; */
+    border: 1px solid #24b58c ;
+    color: grey;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 3%;
+    width: 7vw;
+
+}
+.H_button:hover
+{
+    cursor: pointer;
+    background-color: #24b58c;
+    color: white;
+    width: 10vw;
+}
+
+.Counseling , .Academic{
+    border: 3px solid #24b58c;
+    box-shadow: 0px 3px 10px  #313332; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #404241;
+    
+
+}
+
+
+.support_services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    margin-top: 13vh;
+}
+.About{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 5%;
+}
+.about_text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #404241;
+    width: 25vw;
+   
+    padding: 30px;
+   
+}
+
+.about_text h1 {
+    margin-bottom: 20px; 
+}
+
+.about_text p {
+    margin-bottom: 15px; 
+    line-height: 1.5; 
+    letter-spacing: 2.5px;
+}
+
+
+.footer{
+    height: 60vh;
+    /* background-color: #24b58c; */
+    /* box-shadow:         0px 1px 1px rgba(50, 50, 50, 0.75); */
+    border-top: 2px solid #24b58c;
+    box-shadow: 0 -5px 8px -5px #333;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: flex-start; 
+    /* gap: 30px; */
+    list-style-type: none;
+    color: #404241;
+    padding: 0 40px;
+
+}
+.footer_content div {
+    flex: 1; 
+    padding: 20px; 
+}
+
+.footer_content li {
+    margin-bottom: 20px; /* Add space between list items */
+}
+
+.quick_link {
+    text-align: left;
+}
+
+.ourservices {
+    text-align: center;
+}
+
+.Contactinfo {
+    text-align: right;
+}
+
+.Followus{
+    text-align: right;
+}
+
+
+.footer_content li:hover{
+    cursor: pointer;
+    color: #24b58c;
+    padding-left: 10px;
+    transition: padding-left 0.3s ease;
+    font-weight:500;
+}
+
+.footer p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #24b58c;
+    text-align: center;
+    border-top: 1px  #404241;
+    font-style: oblique;
+    /* margin-top: %; */
+    
+}
+
+.quick_link a{
+    text-decoration: none;
+    color:#404241;
+
+}
+
+
+.quick_link a:hover{
+    text-decoration: none;
+    color:#24b58c;
+
+}
+#Health_resources, #support_services, #about {
+    padding-top: 60px; /* Adjust as needed */
+}
+
+.ourservices a{
+    text-decoration: none;
+    color:#404241;
+
+}
+
+.ourservices a:hover{
+    text-decoration: none;
+    color:#24b58c;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: #24b58c;
+}

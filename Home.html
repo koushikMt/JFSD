@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+<div class="Navbar">
+    <img class="Nav_image" src="../Student_health/kk.svg" alt="image" srcset="">
+    <ul class="Nav_contetn">
+        <!-- <li class="Nav_list">
+            <a class="Health_resources" href="#Health_resources">Health Resources</a>
+            <ul class="dropdown">
+                <li><a href="#">Mental Health Support</a></li>
+                <li><a href="#">Fitness Programs</a></li>
+                <li><a href="#">Nutrition Advice</a></li>
+            </ul>
+        </li> -->
+        <li class="Nav_list">
+        <a href="#Health_resources">Wellness Programs</a>
+           
+        </li>
+        <li class="Nav_list">
+            <a href="#support_services">Support Services</a>
+            <!-- <ul class="dropdown2">
+                <li><a href="#">Counseling Services</a></li>
+                <li><a href="#">Academic Support</a></li>
+            
+            </ul> -->
+        </li>
+        <li class="Nav_list"><a href="#about">About</a></li>
+        <li class="Nav_list"><a href="Login.html">Logout</a></li>
+    </ul> 
+</div>
+
+<div class="Home_section" >
+    <img src="../Student_health/home-img.svg" alt="alt" srcset="">
+    <div class="Text_content">
+        <h1 style="font-size: 35px;">Stay safe, Stay healthy</h1>
+        <p>By Student Health and Wellness Resources</p>
+    </div>
+   
+</div>
+
+
+<div class="Health-resources" id="Health_resources">
+    <h1>Wellness Programs</h1>
+
+    <div class="image-container">
+        <div class="Mental">
+            <img class="H_img" src="../Student_health/Mental_logo.jpg" alt="">
+            <p style="font-size: 19px; padding: 8px; font-weight: 500;">Mental Health Support</p>
+           <a href="Mental.html"> <button class="H_button">Learn more</button></a>
+        </div>
+    
+        <div class="Fitness">
+            <img class="H_img" src="../Student_health/fitnees.jpg" alt="">
+            <p style="font-size: 19px; padding: 8px; font-weight: 500;">Fitness Programs</p>
+            <a href="Fitness.html"> <button class="H_button">Learn more</button></a>
+        </div>
+    
+        <div class="Nutrition">
+            <img class="H_img" src="../Student_health/nutritious_logo.jpg" alt="">
+            <p style="font-size: 19px; padding: 8px; font-weight: 500;">Nutrition Advice</p>
+            <a href="Nutrition.html"> <button class="H_button">Learn more</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="support_services" id="support_services">
+    <h1>Support Services</h1>
+
+    <div class="image-container">
+        <div class="Academic">
+            <img class="H_img" src="../Student_health/Counselling_logo.jpg" alt="">
+            <p style="font-size: 19px; padding: 8px; font-weight: 500;">Counseling Services</p>
+            <a href="Counselling.html"> <button class="H_button">Learn more</button></a>
+        </div>
+    
+        <div class="Academic">
+            <img class="H_img" src="../Student_health/Academic_logo.jpg" alt="">
+            <p style="font-size: 19px; padding: 8px; font-weight: 500;">Academic Support</p>
+            <a href="Academic.html"> <button class="H_button">Learn more</button></a>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="About" id="about">
+
+    <div class="About_image">
+<img src="../Student_health/about-img.svg" alt="alt" srcset="">
+    </div>
+
+    <div class="about_text">
+   <h1>About Us</h1>
+   <p>Welcome to Student Health and Wellness Resources!
+
+    We are dedicated to supporting students' well-being through essential programs.
+    
+    Explore our offerings in mental health, fitness, and nutrition.
+    
+    Our goal is to create a healthier campus community.
+    
+    Join us in fostering a supportive environment for all students!</p>
+    </div>
+
+</div>
+
+
+
+<div class="footer">
+
+    <div class="footer_content">
+
+        <div class="quick_link">
+            <h2 style="color: #24b58c;">Quick Links</h2>
+                <li><a href="#Health_resources">Wellness programs</a></li>
+                <li><a href="#support_services">Support services</a> </li>
+        </div>
+    
+        <div class="ourservices">
+            <h2 style="color: #24b58c;">Our services</h2>
+            <li><a href="#Health_resources"> Mental Health Suppor</a></li>
+            <li><a href="#Health_resources">Fitness Programs</a></li>
+            <li> <a href="#Health_resources">Nutrition Advice</a></li>
+            <li> <a href="#support_services">Counseling Services</a></li>
+            <li> <a href="#support_services">Academic Support</a></li>
+
+
+        </div>
+
+        <div class="Contactinfo">
+        <h2 style="color: #24b58c;"> Contact info</h2>
+            <li> ☎ 888888888</li>
+            <li> ✉ abc@gamil.com</li>
+            <li> ✈ vijayawada,india</li>
+        </div>
+
+        <div class="Followus">
+        <h2 style="color: #24b58c;">Follow us</h2>
+
+        <li>ⓕ Facebook</li>
+        <li>   [◉°]  Instagram</li>
+        <li> ✔✔ Whatsapp</li>
+
+        </div>
+    </div>
+
+    <p>Created by jfsd team /@Copyrights reserved</p>
+</div>
+
+<div id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">
+    &#8679;
+</div>
+
+<script>
+    // Show/hide the scroll-to-top button
+    window.onscroll = function () {
+        const scrollToTopBtn = document.getElementById("scrollToTop");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // Scroll to top when the button is clicked
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+
+</body>
+</html>

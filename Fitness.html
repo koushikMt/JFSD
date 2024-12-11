@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Programs</title>
+    <link rel="stylesheet" href="Fitness.css">
+    <style>
+        .service-container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .fitness-options, .sports-options {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .sports-options .sport {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sport-details {
+            text-align: left;
+        }
+
+        .sport h3 {
+            margin: 0;
+        }
+
+        .sport p {
+            margin: 5px 0;
+        }
+
+        .sport-button {
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .sport-button:hover {
+            background-color: #0056b3;
+        }
+
+        .joined-message {
+            font-size: 1.2rem;
+            color: green;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="service-container">
+        <h1>Fitness Programs</h1>
+        <img style="height: 200px; width: 300px" src="../Student_health/fitnees.jpg" alt="Fitness Image">
+
+        <p>Join our fitness programs, including group classes, personal training, and sports activities. Stay healthy and active with our diverse offerings.</p>
+        
+        <!-- Fitness Options -->
+        <div class="fitness-options">
+            <div class="option1">
+                <a href="#">Yoga</a>
+                <div class="hover-info1">
+                    <p>Yoga improves flexibility, balance, and mental clarity. Join our guided yoga sessions for all levels.</p>
+                </div>
+            </div>
+            <div class="option2">
+                <a href="#">Zumba</a>
+                <div class="hover-info2">
+                    <p>Zumba is a fun, high-energy dance workout that blends Latin and international music with exercise.</p>
+                </div>
+            </div>
+            <div class="option3">
+                <a href="#">Gym</a>
+                <div class="hover-info3">
+                    <p>Our gym offers state-of-the-art equipment and personal trainers to help you achieve your fitness goals.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Join Now Button -->
+        <button class="service-button">Join Now</button>
+
+        <!-- Upcoming Sports Challenges -->
+        <h2>Upcoming Sports Challenges</h2>
+        <div class="sports-options">
+            <!-- Cricket -->
+            <div class="sport" id="cricket-sport">
+                <div class="sport-details">
+                    <h3>Cricket</h3>
+                    <p><strong>Date:</strong> 15th December 2024</p>
+                    <p><strong>Venue:</strong> KL University</p>
+                </div>
+                <button class="sport-button" onclick="joinSport('cricket')">Join Now</button>
+                <div id="cricket-joined-message" class="joined-message">You have joined the Cricket challenge!</div>
+            </div>
+            <!-- Volleyball -->
+            <div class="sport" id="volleyball-sport">
+                <div class="sport-details">
+                    <h3>Volleyball</h3>
+                    <p><strong>Date:</strong> 20th December 2024</p>
+                    <p><strong>Venue:</strong> KL University</p>
+                </div>
+                <button class="sport-button" onclick="joinSport('volleyball')">Join Now</button>
+                <div id="volleyball-joined-message" class="joined-message">You have joined the Volleyball challenge!</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function joinSport(sport) {
+            // Show the confirmation message based on which sport was clicked
+            if (sport === 'cricket') {
+                document.getElementById('cricket-joined-message').style.display = 'block';
+            } else if (sport === 'volleyball') {
+                document.getElementById('volleyball-joined-message').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

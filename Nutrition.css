@@ -1,0 +1,124 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Service Container */
+.service-container {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #24b58c;
+}
+
+/* Service Image */
+.service-image {
+    height: 200px;
+    width: 300px;
+}
+
+/* Paragraph Styles */
+p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Nutrition Options */
+.nutrition-options {
+    display: flex;
+    justify-content: center; /* Centers the options horizontally */
+    gap: 20px; /* Adds spacing between options */
+    margin-top: 30px;
+}
+
+.option {
+    background-color: #e9f7f5;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative; /* Enables positioning hover-info inside the option */
+    text-align: center;
+    cursor: pointer;
+    width: 30%; /* Equal width for all options */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.option h3 {
+    font-size: 1.5rem;
+    color: #24b58c;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.option .info {
+    display: none; /* Initially hide the info content */
+    position: absolute;
+    top: 100%; /* Position the info below the option */
+    left: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-top: 10px; /* Adds spacing below the option */
+    border-radius: 5px;
+    width: 100%; /* Match the width of the parent option */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for visibility */
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover Effects */
+.option:hover {
+    background-color: #d1f3e7; /* Slightly lighter background on hover */
+    transform: translateY(-5px); /* Elevate the option */
+}
+
+.option:hover .info {
+    display: block; /* Display the info box */
+    opacity: 1; /* Make the info box visible */
+}
+
+/* Get Advice Button */
+.service-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #24b58c;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-button:hover {
+    background-color: #1f9e78;
+}
+
+/* Video Container */
+.youtube-video {
+    text-align: center;
+    margin-top: 170px;
+}
+
+.youtube-video iframe {
+    width: 100%; /* Makes the video responsive */
+    height: 315px;
+    max-width: 560px; /* Keep standard iframe size */
+    margin: 0 auto;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support</title>
+    <link rel="stylesheet" href="Mental.css">
+</head>
+<body>
+    <div class="service-container">
+        <h1>Mental Health Support</h1>
+        <img style="height: 200px; width: 300px;" src="../Student_health/Mental_logo.jpg" alt="img">
+        <div class="text">
+            <p>We provide various services to support mental health, including one-on-one counseling, peer support groups, and stress management workshops.</p>
+        </div>
+        
+        <div class="mental-health-options" id="mental-health-options">
+            <div class="option1">
+                <a href="#">Anxiety</a>
+                <div class="hover-info1">
+                    <p>Anxiety is a feeling of worry, nervousness, or unease. It's often characterized by excessive fear or stress.</p>
+                </div>
+            </div>
+            <div class="option2">
+                <a href="#">Stress</a>
+                <div class="hover-info2">
+                    <p>Stress is a physical, mental, or emotional strain or tension. It can be caused by challenging situations or demands.</p>
+                </div>
+            </div>
+            <div class="option3">
+                <a href="#">Depression</a>
+                <div class="hover-info3">
+                    <p>Depression is a mood disorder that causes persistent feelings of sadness and loss of interest. It can affect daily life and well-being.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wr4N-SdekqY?si=HLTXhzpv9gldAX66" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Book Workshop Button -->
+        <button class="service-button">Book Workshop</button>
+    </div>
+
+    <script>
+        function showOptions() {
+            const options = document.getElementById("mental-health-options");
+            options.classList.toggle("hidden"); // Toggle visibility
+        }
+    </script>
+</body>
+</html>

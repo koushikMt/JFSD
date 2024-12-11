@@ -1,0 +1,71 @@
+
+img{
+    width: 20vw;
+    height: 70vh;
+    /* object-fit: cover; */
+}
+.Login_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 6vh;
+
+
+}
+p{
+    list-style-type: none;
+    color: #404241;
+}
+p:hover{
+    color: #24b58c;
+}
+.Anchor{
+    text-decoration: none;
+}
+
+.Title{
+    text-align: center;
+    color: #404241;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Login_page{
+    display: flex;                       
+    flex-direction: column;               
+    width: 20vw;                          
+    height: 60vh;                         
+    justify-content: center;                
+    align-items: center;                 
+    text-align: center;
+    color: #404241;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0px 3px 10px #313332;   
+    padding: 50px;                       
+    border-radius: 8px;                   
+    /* margin: 20px;   */
+    font-size: 20px;  
+
+}
+.input{
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 80%;                          /* Set width for inputs */
+    padding: 10px;                      /* Add padding for better appearance */
+    margin-bottom: 15px;
+}
+.Login_button{
+    border-radius: 4px;
+    background-color: #24b58c;
+    color: white;
+    border: 0;
+    padding :14px;
+    margin-top: 7vh;
+    height: 8vh;
+    width: 11vw;
+    
+
+}
+.Login_button:hover{
+    cursor: pointer;
+}

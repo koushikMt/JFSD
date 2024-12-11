@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Support</title>
+    <link rel="stylesheet" href="academic_support.css">
+    <style>
+        /* Body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Service container to align elements */
+        .service-container {
+            display: flex;
+            padding: 20px;
+            height: 100vh;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /* Left side: options */
+        .options-container {
+            width: 60%;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        /* Image styling */
+        .service-image {
+            height: 200px;
+            width: 300px;
+            margin: 20px auto; /* Center the image horizontally */
+        }
+
+        /* Title styling */
+        h1 {
+            text-align: center; /* Center the title */
+            margin-top: 0;
+            color: #24b58c;;
+        }
+
+        /* Academic options container */
+        .academic-options {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Option styles */
+        .option-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .option {
+            width: 70%;
+            text-align: left;
+        }
+
+        .option h3 {
+            margin: 0;
+        }
+
+        .option p {
+            margin: 5px 0;
+        }
+
+        .option a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* Right side: Get Support Button */
+        .schedule-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            right: 10px; /* Aligns the button to the right */
+        }
+
+        .schedule-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Notification styling */
+        .notification {
+            margin-top: 10px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="service-container">
+        <!-- Left Side: Academic Options -->
+        <div class="options-container">
+            <!-- Centered Image and Title -->
+           
+            <h1>Academic Support</h1>
+            <img class="service-image" src="../Student_health/Academic_logo.jpg" alt="Academic Support">
+            <p style="
+            margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;">Receive tutoring, writing assistance, and other academic resources to help you succeed in your courses.</p>
+
+            <!-- Academic Options -->
+            <div class="academic-options">
+                <div class="option-container" id="writingAssistance">
+                    <div class="option">
+                        <h3>Writing Assistance</h3>
+                        <p>Get help with writing essays, reports, and research papers. Improve your academic writing skills.</p>
+                    </div>
+                    <button class="schedule-button" onclick="scheduleNow('Writing Assistance')">Get Support</button>
+                </div>
+                <div class="option-container" id="mathTutoring">
+                    <div class="option">
+                        <h3>Math Tutoring</h3>
+                        <p>Receive one-on-one tutoring for mathematics courses, from algebra to calculus and beyond.</p>
+                    </div>
+                    <button class="schedule-button" onclick="scheduleNow('Math Tutoring')">Get Support</button>
+                </div>
+                <div class="option-container" id="studySkills">
+                    <div class="option">
+                        <h3>Study Skills Coaching</h3>
+                        <p>Learn effective study techniques, time management strategies, and how to prepare for exams.</p>
+                    </div>
+                    <button class="schedule-button" onclick="scheduleNow('Study Skills Coaching')">Get Support</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function scheduleNow(option) {
+            alert("You have successfully scheduled for " + option + "!");
+        }
+    </script>
+</body>
+</html>

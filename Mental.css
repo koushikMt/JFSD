@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.service-container {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #24b58c;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+p {
+    display: block;
+    margin: 0 auto; 
+    max-width: 600px; 
+    text-align: center; 
+    line-height: 2.5; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5vh;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Center the text container */
+.mental-health-options {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Centers the options horizontally */
+    gap: 20px; /* Space between options */
+}   
+
+.option1, .option2, .option3 {
+    background-color: #e9f7f5;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    width: 30%; /* Equal width for each option */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Transition effect for smooth hover */
+}
+
+.option1 a, .option2 a, .option3 a {
+    text-decoration: none;
+    color: #24b58c;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.option1:hover, .option2:hover, .option3:hover {
+    background-color: #d1f3e7;
+    transform: translateY(-5px); /* Move the option slightly up on hover */
+}
+
+/* Hide hover info by default */
+.hover-info1, .hover-info2, .hover-info3 {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it below the option */
+    left: 0;
+    background-color: #f1f1f1;
+    padding: 5px;
+    margin-top: 10px; /* Add margin to space it below the option */
+    border-radius: 5px;
+    width: 100%; /* Make the info box take full width of the option */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Only display the hover-info when the option is hovered */
+.option1:hover .hover-info1, .option2:hover .hover-info2, .option3:hover .hover-info3 {
+    display: block;
+    opacity: 1;
+}
+
+.service-button {
+
+    background-color: #24b58c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.service-button:hover {
+    background-color: #108663;
+}
+
+/* Optional hidden class for toggling visibility */
+.hidden {
+    display: none;
+}
+
+.video-container {
+    text-align: center;
+    margin-top: 160px;
+    max-width: 100%;
+}
+
+iframe {
+    width: 100%; /* Makes the video responsive */
+    height: 315px; /* Adjust the height accordingly */
+    max-width: 560px; /* Maintain the width as per the standard iframe size */
+    margin: 0 auto;
+}

@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+}
+
+.service-container {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #24b58c;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Fitness Options */
+.fitness-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.option1, .option2, .option3 {
+    background-color: #e9f7f5;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 30%;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.option1 a, .option2 a, .option3 a {
+    text-decoration: none;
+    color: #24b58c;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.option1:hover, .option2:hover, .option3:hover {
+    background-color: #d1f3e7;
+    transform: translateY(-5px);
+}
+
+/* Hover Info */
+.hover-info1, .hover-info2, .hover-info3 {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the option */
+    left: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.option1:hover .hover-info1,
+.option2:hover .hover-info2,
+.option3:hover .hover-info3 {
+    display: block;
+    opacity: 1;
+}
+
+/* Join Now Button */
+.service-button {
+    margin-top: 170px;
+    padding: 10px 20px;
+    background-color: #24b58c;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-button:hover {
+    background-color: #1f9e78;
+}
+sports-options {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.sport {
+    margin-bottom: 15px;
+}
+
+.sport h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.sport-button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sport-button:hover {
+    background-color: #0056b3;
+}

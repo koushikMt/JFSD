@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counseling Services</title>
+    <link rel="stylesheet" href="counseling_services.css">
+    <style>
+        /* Body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Service container to align elements */
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+
+        /* Left side: options */
+        .options-container {
+            width: 60%;
+            padding-right: 20px;
+            text-align: center; /* Center the text */
+        }
+
+        /* Image styling */
+        .service-image {
+            height: 200px;
+            width: 300px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto; /* Center the image */
+        }
+
+        /* Counseling options container */
+        .counseling-options {
+            margin-top: 20px;
+        }
+
+        /* Option styles */
+        .option-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .option {
+            width: 75%;
+            text-align: left;
+        }
+
+        .option h3 {
+            margin: 0;
+        }
+
+        .option p {
+            margin: 5px 0;
+        }
+
+        .option a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* Schedule Now Button */
+        .schedule-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .schedule-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Notification styling */
+        .notification {
+            margin-top: 10px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="service-container">
+        <!-- Left Side: Counseling Options -->
+        <div class="options-container">
+            <!-- Centered Image and Title -->
+            <h1 style="color:#24b58c; ;">Counseling Services</h1>
+            <img class="service-image" src="../Student_health/Counselling_logo.jpg" alt="Counseling Services">
+
+            <p style="margin-top: 20px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            line-height: 1.8;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 17px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;">Get professional counseling support for personal challenges, stress management, and mental health support.</p>
+
+            <!-- Counseling Options -->
+            <div class="counseling-options">
+               
+                <div class="option-container" id="personalDevelopment">
+                    <div class="option">
+                        <h3>Personal Development</h3>
+                        <p>Focus on self-improvement, setting goals, building confidence, and achieving personal growth.</p>
+                    </div>
+                    <button class="schedule-button" onclick="scheduleNow('Personal Development')">Schedule Now</button>
+                    <div class="notification" id="status-PersonalDevelopment"></div>
+                </div>
+             
+                <div class="option-container" id="relationshipCounseling">
+                    <div class="option">
+                        <h3>Relationship Counseling</h3>
+                        <p>Get help with relationship issues, communication skills, and conflict resolution strategies.</p>
+                    </div>
+                    <button class="schedule-button" onclick="scheduleNow('Relationship Counseling')">Schedule Now</button>
+                    <div class="notification" id="status-RelationshipCounseling"></div>
+                </div>
+                <div class="option-container" id="careerCounseling">
+                    <div class="option">
+                        <h3>Career Counseling</h3>
+                        <p>Explore career options, develop skills, and receive guidance on job searching and interviews.</p>
+                    </div>
+                    <button class="schedule-button" onclick="scheduleNow('Career Counseling')">Schedule Now</button>
+                    <div class="notification" id="status-CareerCounseling"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function scheduleNow(option) {
+            var statusElement = document.getElementById('status-' + option.replace(/ /g, ''));
+            statusElement.innerHTML = "You have successfully scheduled for " + option + "!";
+            statusElement.style.color = "green";
+        }
+    </script>
+</body>
+</html>

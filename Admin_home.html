@@ -1,0 +1,87 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin - Manage Services</title>
+        <link rel="stylesheet" href="Admin_home.css">
+    </head>
+    <body>
+        <div class="Navbar">
+            <img class="Nav_image" src="../Student_health/kk.svg" alt="image" srcset="">
+            <ul class="Nav_contetn">
+            
+            
+                
+            
+                <li class="Nav_list"><a href="Login.html">Logout</a></li>
+            </ul> 
+        </div>
+        
+
+    <!-- Admin Section -->
+    <div class="Admin_section">
+        <h1 class="Admin_title">Admin Dashboard</h1>
+
+        <!-- Add New Service Form -->
+        <div class="add-service-form">
+            <h2>Add New Service</h2>
+            <form action="/addService" method="POST">
+                <label for="serviceName">Service Name:</label>
+                <input type="text" id="serviceName" name="serviceName" required>
+
+                <label for="serviceDescription">Description:</label>
+                <input type="text" id="serviceDescription" name="serviceDescription" required>
+
+                <button type="submit">Add Service</button>
+            </form>
+        </div>
+
+    
+        <div class="existing-services">
+            <h2>Manage Existing Services</h2>
+    <div class="service_container">
+            <div class="service-item">
+                <p><strong>Mental Health Support</strong></p>
+                <button class="delete-button" onclick="deleteService('Mental Health Support')">Delete</button>
+            </div>
+
+            <div class="service-item">
+                <p><strong>Fitness Programs</strong></p>
+                <button class="delete-button" onclick="deleteService('Fitness Programs')">Delete</button>
+            </div>
+
+            <div class="service-item">
+                <p><strong>Nutrition Advice</strong></p>
+                <button class="delete-button" onclick="deleteService('Nutrition Advice')">Delete</button>
+            </div>
+
+            <div class="service-item">
+                <p><strong>Counseling Services</strong></p>
+                <button class="delete-button" onclick="deleteService('Nutrition Advice')">Delete</button>
+            </div>
+
+            <div class="service-item">
+                <p><strong>Academic Support</strong></p>
+                <button class="delete-button" onclick="deleteService('Nutrition Advice')">Delete</button>
+            </div>
+    </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // Simple JavaScript to handle service deletion (for now, this is just a placeholder)
+        function deleteService(serviceName) {
+            if(confirm(`Are you sure you want to delete the service: ${serviceName}?`)) {
+                // Placeholder for backend call to delete the service
+                alert(`${serviceName} has been deleted!`);
+                // You would typically send a request to your backend here
+            }
+        }
+    </script>
+
+    </body>
+    </html>
